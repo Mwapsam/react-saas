@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Dashboard, Music } from './pages';
+import { Analytics, Dashboard, Music } from './pages';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="admin-music" element={<Music />} />
+        <Route path="/analytics" element={<Analytics />} />
       </Routes>
     </BrowserRouter>
   );
